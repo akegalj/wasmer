@@ -26,6 +26,7 @@ wasmer-cache = { version = "1.0.2", path = "lib/cache", optional = true }
 wasmer-types = { version = "1.0.2", path = "lib/wasmer-types" }
 wasmer-middlewares = { version = "1.0.2", path = "lib/middlewares", optional = true }
 cfg-if = "1.0"
+walrus = "0.18"
 
 [workspace]
 members = [
@@ -255,6 +256,12 @@ required-features = ["cranelift"]
 name = "imported-function-env"
 path = "examples/imports_function_env.rs"
 required-features = ["cranelift"]
+
+[[example]]
+name = "malloc-free-counter"
+path = "examples/malloc_free_counter.rs"
+required-features = ["cranelift"]
+
 
 [[example]]
 name = "hello-world"
